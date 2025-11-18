@@ -1,5 +1,3 @@
-import Data.Maybe (mapMaybe)
-
 inputFile :: String
 inputFile = "input.txt"
 
@@ -15,4 +13,4 @@ removeNonEnglish :: String -> String
 removeNonEnglish = filter (`elem` ['a'..'z'])
 
 isPalindrome :: String -> Bool
-isPalindrome str = (reverse str) == str
+isPalindrome str = reverse str == str
