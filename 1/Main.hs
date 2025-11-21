@@ -7,7 +7,7 @@ main = do
     print $ number isPalindrome $ map removeNonEnglish content
 
 number :: (a -> Bool) -> [a] -> Int
-number p = length . filter id . map p
+number p = length . filter p
         
 removeNonEnglish :: String -> String
 removeNonEnglish = filter (`elem` ['a'..'z'])
